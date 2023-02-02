@@ -1,0 +1,38 @@
+*************************************************
+Instalar vite para React
+npm init vite@latest    ////busca la ultima vesion
+Luego seleccionar Framework que seria React
+Select a variant : JavasScrit
+Posicionarse en la carpeta con 
+cd citas
+npm install
+npm run dev // arrancar elproyecto
+
+*************************************************
+Instalar tailwindcss
+se instalan 3 dependencias unicamente para desarrollo
+npm i -D tailwindcss postcss autoprefixer
+
+Crear archivo de configuracion de tailwindcss
+npx tailwindcss init -p
+
+*Crea el archivo tailwind.config.cjs
+
+En index.css se borra todo y se colocan las directivas de tailwindcss(paquetes)
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+*************************************************
+Configuracion de archivo tailwind.config.cjs archivos donde aplicara el css
+editar la linea 
+content : [],
+
+quedara asi que aplique css a index y a todos los archivos y subcarpertas con archivos .jsx
+content : ["./index.html","./src/**/*.jsx]
+******************************************************
+*******************************************************
+correr aplicacion en red local para que las maquinas de la red puedan acceder
+npm run dev -- --host
+
+
